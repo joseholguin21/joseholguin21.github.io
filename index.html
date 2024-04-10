@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Dead By Daylight Character Catalog | Home</title>
+    <meta name="description" content="A Catalog of Shows Set in Los Angeles">
+    <link rel="stylesheet" href="style.css" />
+    <script type="text/javascript" src="scripts.js"></script>
+</head>
+
+<body>
+    <header class="main-header">
+        <h1 class="title"> Dead By Daylight Killers </h1>
+    </header>
+
+     <div class= "footer">
+        <div class="search-bar">
+                <input type="search" oninput = "liveSearch()" id="killerBar" placeholder="Search Killer...">
+        </div>
+        <button onclick="removeLastKiller();">
+            Remove A Killer!
+        </button>
+        <button onclick="sortKillers();">
+            Sort Killers by Playable Difficulty!
+        </button>
+        <select id="dropdown" onchange="selectedOption();">
+            <option value="option1"> Easy Killers </option>
+            <option value="option2"> Moderate Killers </option>
+            <option value="option3"> Hard Killers </option>
+            <option value="option4"> Ranged Killers </option>
+            <option value="option5"> High-Mobility Killers </option>
+        </select>
+
+    </div>
+
+    <div id="card-container">
+    </div>
+    <div class="card" style="display: none;" id="thiscard">
+        <div class="card-content">
+            <h2> title</h2>
+            <img src="" alt="poster">
+            <h3 class = "tag"> </h3>
+            <h3 class = "tag"> </h3>
+            <h4 class = "description"> Description </h4>
+            <p> </p>
+        </div>
+    </div>
+
+</body>
+
+</html>
